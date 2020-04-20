@@ -1,23 +1,23 @@
 # RatFun-Regression
-A spreadhseet with visual basic code for fast and accurate single-parameter symbolic regression using **rat**ional **fun**ctions. Rational functions have the following form:
+A spreadhseet with visual basic code for fast and accurate single-parameter symbolic regression using **rat**ional **fun**ctions. [Rational functions](https://en.wikipedia.org/wiki/Rational_function) are ideal for approximating complex analytical formulae, and for regressions to empirical data such as thermodynamic properties. They have the following form:
 
    *y* = (*a<sub>0</sub> + a<sub>1</sub>·x + a<sub>2</sub>·x² +...+ a<sub>n</sub>·x<sup>n</sup>*) / (*b<sub>0</sub> + b<sub>1</sub>·x + b<sub>2</sub>·x² +...+ b<sub>m</sub>·x<sup>m</sup>*)
 
 Where either coefficient *a*<sub>0</sub> or *b*<sub>0</sub> is set to 1:
-- For **Padé approximation**: *b*<sub>0</sub>=1, and *a*<sub>0</sub> can have any value (also zero). The simplest such equation is
+- For **[Padé approximant](https://en.wikipedia.org/wiki/Pad%C3%A9_approximant)**: *b*<sub>0</sub>=1, and *a*<sub>0</sub> can have any value (also zero). The simplest such equation is
 *y* = *x*.
-- For **reciprocal Padé approximation**: *a*<sub>0</sub>=1, and *b*<sub>0</sub> can have any value (also zero). This regression is only applied in cases where all x and y values are non-zero. The simplest such equation is *y* = 1/*x*.
+- For **reciprocal Padé approximant**: *a*<sub>0</sub>=1, and *b*<sub>0</sub> can have any value (also zero). This regression is only applied in cases where all *x* and *y* values are non-zero. The simplest such equation is *y* = 1/*x*.
 
-### How to use
-- STEP 1: Enter a data set (x and y values) in columns A & B of sheet "1.Data".  If the y-values have different weights or uncertainties, enter these in column C.
-- STEP 2: Adjust the user-definable settings in sheet "2.Options".  These settings include the maximum exponent of x in the rational function, and the maximum number of polynomial coefficients.
-- STEP 3: Click on the tab for sheet "3.Analyze", and wait for results to appear in sheet "4.Results":
+### How to use the program
+- **STEP 1**: Enter a data set (*x* and *y* values) in columns A & B of sheet ***1.Data***.  If the y-values have different weights or uncertainties, enter these in column C.
+- **STEP 2**: Adjust the user-definable settings in sheet ***2.Options***.  These settings include the maximum exponent of *x* in the rational function, and the maximum number of polynomial coefficients permitted.
+- **STEP 3**: Click on the tab for sheet ***3.Analyze***, and wait for results to appear in sheet ***4.Results***:
   - The solver to generates all combinations of rational functions with up to the given number of coefficients.
-  - For each function, the polynomial coefficients are fitted by SVD (Singular-Value Decomposition) that can omit outliers with a user-defined tolerance.
+  - For each function, the polynomial coefficients are fitted by SVD ([Singular-Value Decomposition](https://en.wikipedia.org/wiki/Singular_value_decomposition)) that can omit outliers with a user-defined tolerance.
   - All fitted equations are tested for singularities in the denominator.
-  - All fitted equations that pass the test are output in Hoerner's nested form, for fastest calculation. 
-  - For each equation, statistics are reported including R², X², mean and maximum absolute error, and Akaike Information Criterion.
-- STEP 4: Select your preferred equation by sorting the results in sheet "4.Results" by any of columns B-G. The best candidate equations are flagged in column "Pareto".
+  - All fitted equations that pass the test are output in [Horner's nested form](https://en.wikipedia.org/wiki/Horner%27s_method), for fastest possible calculation. 
+  - For each equation, statistics are reported including *[R²](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)*, *[X²](https://en.wikipedia.org/wiki/Chi-squared_distribution)*, [mean and maximum absolute error]((https://en.wikipedia.org/wiki/Mean_absolute_error)), and [Akaike Information Criterion](https://en.wikipedia.org/wiki/Akaike_information_criterion).
+- **STEP 4**: Select your preferred equation by sorting the results in sheet ***4.Results*** by a statistic of your choice in columns B-G. The best candidate equations are flagged in column *Pareto*.
 
 ### Installation and activation
 - Simply download the spreadsheet file and open it in Microsoft Excel. No installation or registration is needed.
