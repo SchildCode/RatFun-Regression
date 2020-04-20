@@ -4,9 +4,9 @@ A spreadhseet with visual basic code for fast and accurate single-parameter symb
    *y* = (*a<sub>0</sub> + a<sub>1</sub>·x + a<sub>2</sub>·x² +...+ a<sub>n</sub>·x<sup>n</sup>*) / (*b<sub>0</sub> + b<sub>1</sub>·x + b<sub>2</sub>·x² +...+ b<sub>m</sub>·x<sup>m</sup>*)
 
 Where either coefficient *a*<sub>0</sub> or *b*<sub>0</sub> is set to 1:
-- For Padé approximation: *b*<sub>0</sub>=1, and *a*<sub>0</sub> can have any value (also zero). An example of a equation is
-*y = x*.
-- For reciprocal Padé approximation: *a*<sub>0</sub>=1, and *b*<sub>0</sub> can have any value (also zero). This regression is only applied in cases where all x and y values are non-zero. An example of a equation is *y* = 1/*x*.
+- For Padé approximation: *b*<sub>0</sub>=1, and *a*<sub>0</sub> can have any value (also zero). The simplest such equation is
+*y* = *x*.
+- For reciprocal Padé approximation: *a*<sub>0</sub>=1, and *b*<sub>0</sub> can have any value (also zero). This regression is only applied in cases where all x and y values are non-zero. The simplest such equation is *y* = 1/*x*.
 
 ### How to use
 - STEP 1: Enter a data set (x and y values) in columns A & B of sheet "1.Data".  If the y-values have different weights or uncertainties, enter these in column C.
