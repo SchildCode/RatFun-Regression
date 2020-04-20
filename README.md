@@ -1,7 +1,7 @@
 # RatFun-Regression
 Fast and accurate single-parameter symbolic regression by Rational Function regression (Pade appliximants and reciprocal Padé approximants). Rational functions have the following form:
 
-   y = (a0 + a1·x + a2·x^2 +...+ an·x^n) / (b0 + b1·x + b2·x^2 +...+ bm·x^m)
+   y = (a<sub>0</sub> + a1·x + a2·x^2 +...+ an·x^n) / (b0 + b1·x + b2·x^2 +...+ bm·x^m)
 
 Either coefficient a0 or b0 is set to 1:
 - For Padé approximation: b0=1, and a0 can have any value (also zero).
