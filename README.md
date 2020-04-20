@@ -14,7 +14,7 @@ Either coefficient a0 or b0 is set to 1:
   - The solver to generates all combinations of rational functions with up to the given number of coefficients.
   - For each function, the polynomial coefficients are fitted by SVD (Singular-Value Decomposition) that can omit outliers with a user-defined tolerance.
   - All fitted equations are tested for singularities in the denominator.
-  - All fitted equations that pass the test are output in nested form 
+  - All fitted equations that pass the test are output in Hoerner's nested form, for fastest calculation. 
   - For each equation, statistics are reported including R², X², mean and maximum absolute error, and Akaike Information Criterion.
 - STEP 4: Select your preferred equation by sorting the results in sheet "4.Results" by any of columns B-G. The best candidate equations are flagged in column "Pareto".
 
