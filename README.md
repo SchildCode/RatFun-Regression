@@ -1,7 +1,7 @@
 # RatFun-Regression
 A spreadhseet with visual basic code for fast and accurate single-parameter symbolic regression using **rat**ional **fun**ctions. Rational functions have the following form:
 
-   *y* = (*a<sub>0</sub> + a<sub>1</sub>·x + a<sub>2</sub>·x<sup>2</sup> +...+ a<sub>n</sub>·x<sup>n</sup>*) / (*b<sub>0</sub> + b<sub>1</sub>·x + b<sub>2</sub>·x<sup>2</sup> +...+ b<sub>m</sub>·x<sup>m</sup>*)
+   *y* = (*a<sub>0</sub> + a<sub>1</sub>·x + a<sub>2</sub>·x² +...+ a<sub>n</sub>·x<sup>n</sup>*) / (*b<sub>0</sub> + b<sub>1</sub>·x + b<sub>2</sub>·x² +...+ b<sub>m</sub>·x<sup>m</sup>*)
 
 Either coefficient a0 or b0 is set to 1:
 - For Padé approximation: b0=1, and a0 can have any value (also zero).
