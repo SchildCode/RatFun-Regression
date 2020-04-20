@@ -3,6 +3,10 @@ Fast and accurate single-parameter symbolic regression by rational function regr
 
    y = (a0 + a1·x + a2·x^2 +...+ an·x^n) / (b0 + b1·x + b2·x^2 +...+ bm·x^m)
 
+Either coefficient a0 or b0 is set to 1:
+- For Padé approximation: b0=1, and a0 can have any value (also zero).
+- For reciprocal Padé approximation: a0=1, and b0 can have any value (also zero)
+
 ### How to use
 - STEP 1: Enter a data set (x and y values) in columns A & B of sheet "1.Data".  If the y-values have different weights or uncertainties, enter these in column C.
 - STEP 2: Adjust the user-definable settings in sheet "2.Options".  These settings include the maximum exponent of x in the rational function, and the maximum number of polynomial coefficients.
