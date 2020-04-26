@@ -1,5 +1,5 @@
 # RatFun-Regression
-A spreadhseet with visual basic code for fast and accurate single-parameter symbolic regression using **rat**ional **fun**ctions. [Rational functions](https://en.wikipedia.org/wiki/Rational_function) are ideal for approximating complex analytical formulae, and for regressions to empirical data such as thermodynamic properties. They have the following form:
+A spreadhseet with visual basic code for fast and accurate single-parameter symbolic regression with **rat**ional **fun**ctions. [Rational functions](https://en.wikipedia.org/wiki/Rational_function) are ideal for approximating complex analytical formulae, and for regressions to empirical data such as thermodynamic properties. They have the following form:
 
    *y* = (*a<sub>0</sub> + a<sub>1</sub>·x + a<sub>2</sub>·x² +...+ a<sub>n</sub>·x<sup>n</sup>*) / (*b<sub>0</sub> + b<sub>1</sub>·x + b<sub>2</sub>·x² +...+ b<sub>m</sub>·x<sup>m</sup>*)
 
